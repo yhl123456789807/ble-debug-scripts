@@ -1,0 +1,18 @@
+# 金星压测脚本依赖
+# 安装: pip install -r requirements.txt
+
+# 内部包 - 需要本地安装
+# 先从本地 venus-glasses 源码安装:
+#   pip install -e /Users/zhengshuang/Documents/code/venus-glasses
+
+# 标准库（已随 Python 内置，无需安装）:
+# re, threading, signal, subprocess, sys, datetime, pathlib, time, argparse, logging, typing, json, os, shutil
+
+# 第三方依赖
+pyserial>=3.5           # venus_glasses 依赖
+backoff>=2.2.1          # venus_glasses 依赖
+uiautomator2>=3.0       # Android 自动化
+facebook-wda>=1.4       # iOS WebDriverAgent 客户端 (import wda)
+pymobiledevice3>=3.0    # iOS 设备通信
+opencv-python>=4.8      # 截图图像处理 (import cv2)
+tqdm>=4.66              # 进度条
